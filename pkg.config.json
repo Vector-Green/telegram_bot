@@ -1,0 +1,11 @@
+{
+  "filename": "build/server.js",
+  "scripts": "build/**/*.node",
+  "outputPath": "./release/server",
+  "/*cross-compilation not supported cause of sqlite3 node-pre-gyp*/targets": [
+    "linuxstatic",
+    "win",
+    "macos"
+  ],
+  "targets": ["host"]
+}
